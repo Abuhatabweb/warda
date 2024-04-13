@@ -1,0 +1,149 @@
+*{
+    text-decoration: none;
+}
+#home{
+    height: calc(100vh - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 20px 100px;
+}
+
+#home-img{
+    width: 300px;
+    margin-right: 15%;
+}
+
+#home-img img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+#home-text{
+    width: 300px;
+}
+
+#home-text p{
+    line-height: 22px;
+    font-size: 24px;
+}
+
+#home-text h1{
+    font-size: 37px;
+    margin: 0px 0 16px -35px;
+}
+
+#home-buttons a{
+    margin: auto;
+}
+#home-buttons{
+    transform: translate(3px , 36px);
+    display: flex;
+    text-decoration: none;
+}
+#home-buttons button{
+    padding: 15px;
+    border-radius: 15px;
+    border: solid 2px purple;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home-button1{
+    background-color: purple;
+    color: white;
+    transition: all 500ms;
+    height: 50px;
+    margin: auto;
+}
+#home-button1:hover{
+    opacity: 0.7;
+}
+
+#home-button2{
+    width: 140px;
+    height: 50px;
+    transition: all 500ms;
+    animation: moving 1s infinite alternate ;
+    margin: auto;
+}
+#home-button2:hover{
+    background-color: purple;
+    color: white;
+}
+
+@keyframes moving {
+    to{
+        transform: translatey(-10px);
+    }
+}
+
+@media (max-width: 767px) {
+    #home-img img{
+        width: 300px;
+    }
+    #home{
+        display: block;
+        height: calc(100vh - 300px);
+    }
+    #home-img{
+        margin: 80px auto 70px ;
+        justify-content: center;
+    }
+    #home-text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #home-text p{
+        line-height: 60px;
+    }
+    #home-text p{
+        font-size: 30px;
+    }
+    #home-text h1{
+        font-size: 2.2rem;
+        margin: 0;
+    }
+}
+@media (min-width: 768px) and ( max-width:991px) {
+    #home-img{
+        margin: 150px auto 70px ;
+        width: 400px;
+    }
+    #home-text{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #home-text p{
+        line-height: 60px;
+    }
+    #home-text p{
+        font-size: 30px;
+    }
+    #home-text h1{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    #home-img{
+        width: 200px;
+    }
+    #home-img img{
+        width: 200px;
+    }
+    #home-text p{
+        font-size: 30px;
+    }
+    #home-text h1{
+        font-size: 2.2rem;
+    }
+    #home-text p{
+        line-height: 20px;
+    }
+}
